@@ -9,7 +9,7 @@ import (
 	"unicode"
 )
 
-//go:embed input.txt
+//go:embed day-one-input.txt
 var efs embed.FS
 
 var digitsAsWordsMap = map[string]int{
@@ -103,7 +103,7 @@ func GetSum(inputs []int) int {
 }
 
 func main() {
-	file, err := efs.Open("input.txt")
+	file, err := efs.Open("day-one-input.txt")
 	if err != nil {
 		log.Fatal(err)
 	}
